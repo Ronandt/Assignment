@@ -1,0 +1,444 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  overflow-x: hidden;
+}
+
+body {
+  z-index: 0;
+  position: relative;
+}
+
+.flex_gal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+
+  flex-wrap: wrap;
+  gap: 23px;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 100px;
+  min-height: 545px;
+  align-content: center;
+}
+
+.flex_gal > div {
+  height: 250px;
+  width: 250px;
+  background-color: #323445;
+  overflow: hidden;
+  box-shadow: 1px 5px 9px black;
+}
+
+#headbackground {
+  height: 600px;
+  background-color: #323445;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#headbackground img[alt="shiraori"] {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 2;
+  bottom: 200px;
+}
+
+#headbackground img[alt="shiraori2"] {
+  position: relative;
+  bottom: 300px;
+  -webkit-transform: translateX(-151%);
+  -ms-transform: translateX(-151%);
+  transform: translateX(-151%);
+  left: 50%;
+  -webkit-filter: brightness(0%);
+  filter: brightness(0%);
+  z-index: 1;
+  opacity: 0.4;
+
+  height: 900px;
+}
+
+header {
+  color: white;
+}
+
+header > h1 {
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  left: 10%;
+  top: 150px;
+  z-index: 4;
+  display: block;
+}
+
+h1 > span {
+  font-size: 100px;
+  position: relative;
+  bottom: 20px;
+  z-index: 1;
+}
+
+header #des {
+  position: absolute;
+  z-index: 3;
+  left: 70%;
+  top: 250px;
+  width: 450px;
+  font-size: 25px;
+}
+
+#des > span {
+  color: rgb(139, 136, 136);
+}
+
+h1 > span {
+  color: rgb(247, 46, 46);
+}
+
+
+
+#dark_section {
+  background-color: rgb(46, 45, 56);
+  text-align: center;
+}
+
+#dark_section > h2 {
+  margin-top: 220px;
+}
+
+.greyedout {
+  color: rgb(235, 235, 235);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 500px;
+  margin: auto;
+}
+
+hr {
+  width: 50px;
+  position: relative;
+  left: 49%;
+  margin-bottom: 40px;
+  border-color: rgb(247, 46, 46);
+}
+
+.flex_gal h3 {
+  margin-top: 10px;
+}
+img[src="./images/kuro_shiro.jpg"] {
+  -webkit-box-shadow: 10px 20px 20px black;
+  box-shadow: 10px 20px 20px black;
+}
+
+.flex_gal div img {
+  height: 30px;
+  margin-top: 30px;
+}
+
+.flex_gal p,
+.flex_gal span {
+  color: rgb(194, 194, 194);
+  text-align: left;
+}
+
+.flex_gal p {
+  margin-top: 20px;
+  width: 220px;
+  position: relative;
+  left: 20px;
+}
+
+.lessdark_section {
+  background-color: #323445;
+  text-align: center;
+}
+
+.lessdark_section h2 {
+  margin-top: 90px;
+}
+
+.flex_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex_two p {
+  color: rgb(238, 238, 238) !important;
+  width: 500px;
+}
+
+#break {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#break > h2 {
+  font-size: 30px;
+}
+
+#information_border {
+  border: 2px solid rgb(247, 46, 46);
+  line-height: 40px;
+  margin-top: 30px;
+
+  background-color: rgb(55, 54, 61);
+}
+
+#information_border > p > span {
+  color: rgb(255, 255, 255);
+}
+
+#information_border p {
+  color: rgb(235, 230, 230) !important;
+}
+
+.container th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+  box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+.container {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td,
+.container th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+  background-color: #323445;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+  background-color: rgb(46, 45, 56);
+}
+
+.container th {
+  background-color: #1f2739;
+}
+
+.container td:first-child {
+  color: rgb(247, 46, 46);
+}
+
+.container tr:hover {
+  background-color: #464a52;
+  -webkit-box-shadow: 0 6px 6px -6px #0e1119;
+  box-shadow: 0 6px 6px -6px #0e1119;
+}
+
+.container td:hover {
+  background-color: #fff842;
+  color: #000000;
+  font-weight: bold;
+
+  -webkit-box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px,
+    #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+
+  box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px,
+    #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+  -webkit-transform: translate3d(6px, -6px, 0);
+  transform: translate3d(6px, -6px, 0);
+
+  -webkit-transition-delay: 0s;
+
+  -o-transition-delay: 0s;
+
+  transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+caption {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+footer {
+  text-align: center;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1e2124),
+    to(black)
+  );
+  background-image: -o-linear-gradient(#1e2124, black);
+  background-image: linear-gradient(#1e2124, black);
+  height: 450px;
+}
+.neon_button {
+  top: 200px;
+}
+
+small {
+  top: 300px;
+}
+
+
+
+@media screen and (max-width: 1616px) {
+  .flex_navigator {
+    left: 1000px;
+  }
+}
+@media screen and (max-width: 1500px) {
+ 
+}
+@media screen and (max-width: 1452px) {
+  .flex_navigator {
+    left: 900px;
+  }
+  div#des {
+    left: 950px;
+  }
+}
+@media screen and (max-width: 1326px) {
+  .flex_navigator {
+    left: 600px;
+    padding-right: 50%;
+  }
+  div#des {
+    left: 800px;
+    top: 400px;
+  }
+}
+@media screen and (max-width: 1214px) {
+  .flex_navigator {
+    left: 500px;
+  
+
+  }
+  div#des {
+    left: 600px;
+  }
+
+  img[alt="shiraori"] {
+    filter: brightness(30%)
+  }
+}
+
+@media (max-width: 1030px) {
+  .flex_navigator {
+    left: -21vw;
+    padding-right: 0
+  
+
+  }
+
+  div#des {
+    left: 100px;
+  }
+}
+
+@media (max-width: 644px) {
+  header > h1 {
+    font-size: 60px;
+  }
+  div#des {
+    left: 100px;
+  }
+  hr {
+    margin-left: -20px;
+  }
+}
+
+@media  (max-width: 552px) {
+  header > h1 {
+    font-size: 50px;
+  }
+  div#des {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .flex_navigator {
+    left: -13vw
+  }
+}
+@media (max-width: 461px) {
+  header > h1 {
+    font-size: 40px;
+  }
+  div#des {
+    left: 30px;
+    font-size: 0.9em
+  }
+  p.greyedout {
+    font-size: 0.9em;
+    width: 300px;
+  }
+  div#information_border p {
+    margin-left: -50px;
+  }
+
+  div#information_border {
+    margin-bottom: 50px
+  }
+
+  #shrinkpa {
+    width: 400px;
+  }
+  .neon_button[href="#headbackground"] {
+    font-size: 30px; 
+  }
+}
+
+@media (max-width: 450px) {
+  .flex_navigator {
+    left: -4vw;
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+

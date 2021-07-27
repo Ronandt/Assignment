@@ -1,0 +1,411 @@
+
+
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.size_bg {
+  height: 62%;
+  background: url("./images/darkbgkb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+.typing_header {
+  color: #ffffff;
+  font-size: 400%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.typing_header_2 {
+  color: #c5c5c5;
+  font-size: 235%;
+  text-decoration-color: rgb(71, 71, 71);
+  margin: 20px;
+  margin-left: -4px
+}
+
+header {
+  margin-top: 100px;
+  width: 900px;
+  margin-right: 600px
+}
+
+.flex_navigator {
+  margin-top: 80px;
+}
+
+.current_page {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+#introduction_header {
+  text-align: center;
+  font-size: 3.5em;
+  padding-top: 50px;
+  color: #c4c4aa;
+
+  font-family: "Inter";
+}
+
+.keyboard_intro_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: white;
+  width: 700px;
+  -webkit-box-shadow: 10px 20px 20px black;
+  box-shadow: 10px 20px 20px black;
+}
+
+#img_kuro {
+  height: 500px;
+  display: inline-block;
+}
+
+#para_intro_length {
+  width: 65ch;
+  font-weight: bold;
+}
+
+svg {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+img[src="./images/kuro_shiro.jpg"] {
+  -webkit-box-shadow: 10px 20px 20px black;
+  box-shadow: 10px 20px 20px black;
+}
+
+img[alt="switch"] {
+  position: relative;
+  height: 150px;
+  top: 15vw;
+  left: 40vw;
+}
+
+img[alt="switch1"] {
+  position: relative;
+  height: 150px;
+  top: 15vw;
+  left: 4vw;
+}
+
+.white_section {
+  background-color: white;
+  position: relative;
+  bottom: 4px;
+  text-align: center;
+}
+
+.flex_gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  
+}
+
+#gap_showcase {
+  gap: 10px;
+}
+
+.flex_gallery img {
+  width: 500px;
+  margin-top: 50px;
+}
+
+img[src="./images/redkb.jpg"] {
+  margin-bottom: 100px;
+}
+
+.flex_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cave_section {
+  background-color: #f6f6f6;
+  position: relative;
+  bottom: 58px;
+
+}
+
+.flex_footer > div {
+  background-color: #1e1e1e;
+  width: 300px;
+  height: 500px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.typing_background {
+  background-image: url("./images/kuro_shiro1.jpg") !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: cover;
+  height: 800px;
+}
+
+.typing_background h2 {
+  background-color: rgb(255, 255, 255, 1);
+  margin-top: 100px;
+  position: relative;
+  bottom: 100px;
+}
+
+header {
+  margin-bottom: 300px;
+}
+
+
+.beige {
+  font-size: 60px;
+  color: #c4c4aa;
+  text-align: center;
+  margin-top: 210px;
+}
+
+.flex_gallery h3 {
+  color: white;
+  font-size: 30px;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.flex_gallery p {
+  color: white;
+  width: 30ch;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.flex_gallery img {
+  box-shadow: 10px 20px 20px black;
+  border-radius: 8px;
+  border: 2px dashed black
+}
+
+.typingonkbpara {
+  position: relative;
+  top: 50px;
+  text-align: left !important;
+}
+
+.flex_gallery .flex_gallery {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  gap: 100px;
+}
+
+.flex_gallery iframe {
+  margin-bottom: 30px;
+}
+
+.flex_footer img {
+  width: 300px;
+}
+
+#svgcrack {
+  position: relative;
+  bottom: 108px;
+}
+
+img[alt="geekhack"], img[alt="keebtalk"] {
+  height: 165px;
+
+}
+
+
+iframe {
+  filter:grayscale();
+  border-radius: 8px;
+  border: 2px dashed white;
+}
+
+
+.flex_footer div p {font-weight: bold;
+color:rgb(190, 190, 190);
+font-family: monospace;
+font-size: 21px;
+margin-top: 50px;
+text-align: center;}
+
+footer {
+  text-align: center;
+}
+
+
+
+small {
+
+  top: 100px;
+  
+}
+
+
+#footerpara {
+  margin-bottom: 100px;
+}
+
+.flex_navigator {
+  top: 50px;
+  left:650px;
+}
+
+.visibility {
+  visibility: visible
+}
+
+@media (max-width: 1548px) {
+  header {
+    position: relative;
+    left: 100px
+  }
+}
+
+@media (max-width: 1366px) {
+  img#img_kuro {
+    width: 700px;
+  }
+
+  header {
+    left: 250px
+  }
+}
+@media (max-width: 1005px) {
+  .flex_navigator {
+    margin-right: 500px;
+  
+   
+
+  }
+
+  header {
+    left: 350px;
+    top: 50px
+  }
+}
+
+@media (max-width: 989px) {
+  .visibility {
+    visibility: hidden;
+  }
+
+  #middle {
+    position: relative;
+    top: 90px;
+  }
+}
+
+@media (max-width: 808px ) {
+  header {
+    width: 600px;
+  }
+
+  header div h1.typing_header{
+    font-size: 50px;
+  }
+  header div h2.typing_header_2  {
+    font-size: 30px;
+  }
+
+  .flex_navigator {
+    margin-bottom: 40px;
+  }
+}
+
+
+@media (max-width: 618px) {
+  
+
+  h2#introduction_header {
+    font-size: 40px;
+  }
+
+  p#display_paragraph {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .visibility {
+    visibility: hidden;
+  }
+  header {
+    width: 390px;
+
+  }
+
+  .flex_navigator {
+    margin-bottom: -80px;
+  }
+}
+
+
+@media (max-width:  433px) {
+  .flex_navigator {
+   
+  
+    margin-right: 550px;
+
+  }
+}
+

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1e2124;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  overflow-y: auto;
+}
+
+.discord_gray {
+  color: rgb(71, 71, 71);
+  text-align: center;
+  font-size: 60px;
+}
+
+html {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff000000;
+}
+
+a:hover, a:visited, a:hover, a:active, a{
+  color: white;
+  text-decoration: none;
+}
+
+.flex_navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 40px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-size: 25px;
+  color: white;
+  font-family: "Varela";
+  padding-top: 50px;
+  padding-right: 200px;
+  position: relative;
+  z-index: 3;
+}
+
+.neon_button[href="#home"], .neon_button[href="#headbackground"] {
+  color: aqua;
+
+  text-align: center;
+  font-size: 3em;
+  cursor: pointer;
+  text-decoration: none;
+  border: aqua 4px solid;
+  padding: 0.25em 1.25em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsla(0, 25%, 90%, 0.3), 0 0 1em aqua;
+  position: relative;
+
+  -webkit-box-shadow: inset 0 0 0.7em 0 aqua, 0 0 0.7em 0 aqua;
+
+  box-shadow: inset 0 0 0.7em 0 aqua, 0 0 0.7em 0 aqua; /*inset adds shadow to inside of element*/
+}
+
+.neon_button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: aqua;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  -webkit-filter: blur(1.5em) opacity(0.7);
+  filter: blur(1.5em) opacity(0.7);
+}
+
+.neon_button:hover,
+.neon-button:focus {
+  background: aqua;
+  color: black;
+  text-shadow: none;
+}
+
+small {
+  position: relative;
+}
+
+@media (max-width: 1616px) {
+  .flex_navigator {
+    padding-right: 70%
+
+  }
+}
+
+@media (max-width: 1326px) {
+  .flex_navigator {
+    padding-right: 100%
+
+  }
+}
+
+
+@media (max-width: 561px)  {
+  a[href="#headbackground"], a[href="#home"]{
+    font-size: 35px !important; 
+  }
+}

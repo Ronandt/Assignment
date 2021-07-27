@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="kbpage.css" rel="stylesheet" />
+    
+    <link href="Shared css/scroll.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="size_bg" id="home">
+      <nav>
+        <div class="flex_navigator">
+          <div>
+            <a href="./landingpage.html">Home</a>
+          </div>
+          <div>
+            <a href="./kbpage.html">Keyboards</a>
+          </div>
+          <div>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div>
+          <h1 class="typing_header">Contact Me</h1>
+        </div>
+        <div>
+          <h3 class="typing_header_2">Find me if you have any feedback!</h3>
+        </div>
+        <div class="social_flex">
+          <div><a href="https://github.com/Ronandt" alt="Ronandts' Profile"><img src="./contact_images/github-sign.svg" /></a></div>
+          <div><a href="https://stackoverflow.com/users/15433765/shiraori" alt="Shiraori's Profile"><img src="./contact_images/stack-overflow.svg" /></a></div>
+          <div><a href="https://discord.com" alt="YeeHee#4759"><img src="./contact_images/discord.svg" /></a></div>
+        </div>
+      </header>
+    </div>
+    <section>
+      <h2 class="beige">Feedback Form</h2>
+      <div class="flex_form">
+        <div class="container">
+          <hr />
+          <form action="https://formspree.io/f/xyyldazj" method="POST">
+            <div class="user-details">
+              <div class="input-box">
+                <label class="details" for="name">Full Name: </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <label class="details" for="email">Email: </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <label class="details" for="subject">Subject: </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <label class="details" for="feeback">Feedback: </label>
+                <input
+                  type="text"
+                  id="feedback"
+                  name="feedback"
+                  placeholder="Enter your feedback"
+                  required
+                />
+              </div>
+            </div>
+            <div class="button">
+              <input type="Submit" name="input" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="white_section">
+        <h2 class="discord_gray">Languages I can speak</h2>
+        <div class="flex_gallery">
+          <div><p>Java</p></div>
+          <div><p>Python</p></div>
+          <div><p>Javascript</p></div>
+          <div><p>HTML</p></div>
+          <div><p>CSS</p></div>
+          <div><p>English</p></div>
+          <div><p>Chinese</p></div>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <a href="#home" class="neon_button">Go back to the top</a>
+          <small
+            ><p>
+              Copyright 2021 &copy; Declan Kuok. If you use this, please give me
+              attribution. Thank you.
+            </p></small
+          >
+        </div>
+      </footer>
+    </section>
+    <script>
+      var form = document.getElementById("my-form");
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset();
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
+</html>
