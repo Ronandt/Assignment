@@ -4,19 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Me</title>
 
     <link href="kbpage.css" rel="stylesheet" />
-    
+
     <link href="Shared css/scroll.css" rel="stylesheet" />
     <link href="contact.css" rel="stylesheet" />
+   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-T8W3R25TME"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-T8W3R25TME");
+    </script>
+      <link rel="icon" type="image/jpg" href="./images/D_Logo.jpg" />
+     
   </head>
   <body>
+
     <div class="size_bg" id="home">
       <nav>
-        <div class="flex_navigator">
+        <div class="flex_navigator fade-in">
           <div>
-            <a href="./landingpage.html">Home</a>
+            <a href="index.html">Home</a>
           </div>
           <div>
             <a href="./kbpage.html">Keyboards</a>
@@ -34,14 +52,28 @@
           <h3 class="typing_header_2">Find me if you have any feedback!</h3>
         </div>
         <div class="social_flex">
-          <div><a href="https://github.com/Ronandt" alt="Ronandts' Profile"><img src="./contact_images/github-sign.svg" /></a></div>
-          <div><a href="https://stackoverflow.com/users/15433765/shiraori" alt="Shiraori's Profile"><img src="./contact_images/stack-overflow.svg" /></a></div>
-          <div><a href="https://discord.com" alt="YeeHee#4759"><img src="./contact_images/discord.svg" /></a></div>
+          <div>
+            <a href="https://github.com/Ronandt" alt="Ronandts' Profile" target="_blank"
+              ><img src="./contact_images/github-sign.svg"
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://stackoverflow.com/users/15433765/shiraori"
+              alt="Shiraori's Profile" target="_blank"
+              ><img src="./contact_images/stack-overflow.svg"
+            /></a>
+          </div>
+          <div>
+            <a href="https://discord.com" alt="YeeHee#4759"
+            target="_blank"><img src="./contact_images/discord.svg"
+            /></a>
+          </div>
         </div>
       </header>
     </div>
     <section>
-      <h2 class="beige">Feedback Form</h2>
+      <h2 class="beige fade-in">Feedback Form</h2>
       <div class="flex_form">
         <div class="container">
           <hr />
@@ -109,15 +141,11 @@
       <footer>
         <div>
           <a href="#home" class="neon_button">Go back to the top</a>
-          <small
-            ><p>
-              Copyright 2021 &copy; Declan Kuok. If you use this, please give me
-              attribution. Thank you.
-            </p></small
-          >
+          <p><small>Copyright 2021 &copy; Declan Kuok. If you use this, please give me attribution. Thank you.</small></p>
         </div>
       </footer>
     </section>
+    <script src="shared.js"></script>
     <script>
       var form = document.getElementById("my-form");
 
@@ -142,5 +170,6 @@
       }
       form.addEventListener("submit", handleSubmit);
     </script>
+ 
   </body>
 </html>

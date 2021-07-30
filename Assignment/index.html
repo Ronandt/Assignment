@@ -9,29 +9,45 @@
       name="keywords"
       content="css, html, assignment, landing page, portfolio"
     />
-    <link rel="stylesheet" href="./Shared css/scroll.css" />
-    <link rel="stylesheet" type="text/css" href="landingpage.css" />
+    <link rel="stylesheet" href="Shared css/scroll.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" type="image/jpg" href="./images/D_Logo.jpg" />
 
     <title>Declan's Portfolio</title>
   </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-T8W3R25TME"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-T8W3R25TME");
+  </script>
   <body>
+   
     <div id="headbackground">
       <nav>
-        <div class="flex_navigator">
+        <div class="flex_navigator fade-in">
           <div>
-            <a href="./landingpage.html">Home</a>
+            <a href="index.html">Home</a>
           </div>
           <div>
-            <a href="./kbpage.html">Keyboards</a>
+            <a href="kbpage.html">Keyboards</a>
           </div>
           <div>
-            <a href="./contact.html">Contact</a>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
       </nav>
       <header>
         <h1>Declan<br />An NYP Student.<br /><span>-</span></h1>
-        <div id="des">
+        <div id="des" class="fade-in">
           <span>➜ Introduction</span>
           <h2>Student, Programmer, Keyboard Enthusiast and Weeb.</h2>
         </div>
@@ -48,17 +64,17 @@
         student myself at this point.
       </p>
       <hr />
-      <div class="flex_gal">
+      <div class="flex_gal fade-in">
         <div>
-          <img src="./landingpage_images/python.png" />
+          <img src="landingpage_images/python.png" />
           <h3>Programming</h3>
           <p>
             Ever since several months ago, I have been interested in
             programming. I love to solve problems through coding.
           </p>
         </div>
-        <div>
-          <img src="./landingpage_images/webdev.jpg" alt="webdev icon" />
+        <div >
+          <img src="landingpage_images/webdev.jpg" alt="webdev icon" />
           <h3>Web Development</h3>
           <p>
             As you can see from this website, I also manage the front-end side.
@@ -66,7 +82,7 @@
           </p>
         </div>
         <div>
-          <img src="./landingpage_images/senjougahara.png" />
+          <img src="landingpage_images/senjougahara.png" />
           <h3>Anime</h3>
           <p>
             I have been an avid anime fan since several years ago and I have
@@ -74,24 +90,24 @@
             watch.
           </p>
         </div>
-        <div>
-          <img src="./landingpage_images/mechkb.jpg" />
+        <div class="fade-in">
+          <img src="landingpage_images/mechkb.jpg" />
           <h3>Keyboards</h3>
           <p>
             Quite sometime ago, I have been interested in mechanical keyboards.
             I dream to build one in the future.
           </p>
         </div>
-        <div>
-          <img src="./landingpage_images/typing.png" />
+        <div class="fade-in">
+          <img src="landingpage_images/typing.png" />
           <h3>Typing</h3>
           <p>
             Ever since when I was a child, I have always been going into typing
             websites. This has made me obtain an average of 120wpm
           </p>
         </div>
-        <div>
-          <img src="./landingpage_images/book.png" />
+        <div class="fade-in">
+          <img src="landingpage_images/book.png" />
           <h3>Reading</h3>
           <p>
             Partially due to anime, I have fell into a rabbit hole of Japanese
@@ -100,9 +116,9 @@
         </div>
       </div>
     </div>
-    <div class="lessdark_section">
-      <h2>About Me</h2>
-      <p class="greyedout">
+    <div class="lessdark_section fade-in">
+      <h2 class="fade-in">About Me</h2>
+      <p class="greyedout fade-in">
         Everything about me, my life, facts and all sorts of
         supercalifragilisticexpialidocious things
       </p>
@@ -110,7 +126,7 @@
       <div class="flex_two">
         <div><img src="landingpage_images/Ronandt.PNG.png" /></div>
         <div>
-          <h2 id="break">
+          <h2 id="break" class="fade-in">
             <span
               style="
                 color: rgb(247, 46, 46);
@@ -118,11 +134,12 @@
                 position: relative;
                 right: 29px;
               "
+              
               >Discover My</span
             >
             Information
           </h2>
-          <p id="shrinkpa">
+          <p id="shrinkpa" class="fade-in">
             I was born in 2004 in Singapore. At three years old, I moved to
             Australia and stayed there for 7 years. I then migrated back to
             Singapore. Ever since, I have been living in Singapore and
@@ -145,7 +162,7 @@
         <caption>
           My Stock Portfolio
         </caption>
-        <thead>
+        <thead class="fade-in">
           <tr>
             <th><h1>Companies</h1></th>
             <th><h1>Price Per Stock</h1></th>
@@ -153,7 +170,7 @@
             <th><h1>Total Bought</h1></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="fade-in">
           <tr>
             <td>ComfortDelgro</td>
             <td>SGD 0.80</td>
@@ -201,13 +218,10 @@
     </div>
 
     <footer>
-      <a href="#headbackground" class="neon_button">Go back to the top</a>
-      <small
-        ><p>
-          Copyright 2021 &copy; Declan Kuok. If you use this, please give me
-          attribution. Thank you.
-        </p></small
-      >
+      <a href="#headbackground" class="neon_button fade-in">Go back to the top</a>
     </footer>
+
+    <script src="shared.js"></script>
+    <!-- Badge Code End Here -->
   </body>
 </html>

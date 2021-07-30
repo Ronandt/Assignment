@@ -33,10 +33,14 @@ header {
   font-family: "Arvo", "Raleway", "Arial", "Helvetica", "Open-Sans";
 }
 
+
 .beige {
   margin-top: 120px;
-  color: #E486f4
+  color: #E486f4;
+  margin-bottom: 40px;
+  
 }
+  
 
 .social_flex {
   display: flex;
@@ -56,6 +60,7 @@ header {
     padding: 10px;
 
 }
+
 
 .container {
     max-width: 800px;
@@ -114,11 +119,8 @@ form .user-details .input-box {
 
 }
 
-.user-details .input-box input:focus,
-
-.user-details .input-box input:focus:valid {
-    border-color: #c4c4aa;
-
+.user-details .input-box input:focus {
+  border-color: #c4c4aa;
 }
 
 form .button {
@@ -129,7 +131,7 @@ form .button {
 form .button input {
     height: 100%;
     width: 100%;
-    color: c4c4aa;
+    color: #c4c4aa;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -145,9 +147,7 @@ form .button input:hover {
   
 }
 
-.beige {
-    margin-bottom: 40px;
-}
+
 
 .neon_button, small{
     top: 150px;
@@ -178,6 +178,12 @@ h2.discord_gray {
   margin-bottom: 80px;
     
   }
+
+  .flex_navigator {
+    top: 70px;
+  }
+
+
   @media (max-width: 808px) {
   header {
       width: 900px;

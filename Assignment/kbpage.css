@@ -191,7 +191,7 @@ img[src="./images/redkb.jpg"] {
 }
 
 .typing_background {
-  background-image: url("./images/kuro_shiro1.jpg") !important;
+  background-image: url("./images/kuro_shiro1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: cover;
@@ -305,13 +305,14 @@ small {
 }
 
 .flex_navigator {
-  top: 50px;
+  top: 70px;
   left:650px;
 }
 
 .visibility {
   visibility: visible
 }
+
 
 @media (max-width: 1548px) {
   header {

@@ -30,10 +30,19 @@ body {
 html {
   overflow-x: hidden;
 }
-::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+
+*::selection {
+  background:rgb(71, 71, 71)
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; 
+}
+
+
+
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: #ff000000;
@@ -52,16 +61,17 @@ a:hover, a:visited, a:hover, a:active, a{
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  gap: 40px;
+  gap: 45px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   font-size: 25px;
   color: white;
   font-family: "Varela";
-  padding-top: 50px;
-  padding-right: 200px;
+  padding-top: 15px;
+  padding-right: 120px;
   position: relative;
+  padding-bottom: 15px;
   z-index: 3;
 }
 
@@ -109,9 +119,20 @@ small {
   position: relative;
 }
 
+
+.fade-in {opacity: 0;
+  transition: opacity 250ms ease-in}
+  
+  
+ .fade-in.appear {
+    opacity: 1;
+  }
+
+
 @media (max-width: 1616px) {
   .flex_navigator {
-    padding-right: 70%
+    padding-right: 70%;
+ 
 
   }
 }
