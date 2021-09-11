@@ -8,6 +8,7 @@
 body {
   z-index: 0;
   position: relative;
+ 
 }
 
 .flex_gal {
@@ -278,7 +279,8 @@ div#information_border:hover {
 }
 
 .container td:first-child {
-  color: rgb(247, 46, 46);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .container tr:hover {
@@ -318,6 +320,10 @@ caption {
   font-weight: bold;
   margin-top: 80px;
   margin-bottom: 50px;
+}
+
+th {
+  color: #185875
 }
 
 footer {

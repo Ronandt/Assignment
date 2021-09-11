@@ -39,6 +39,7 @@ html {
   font-size: 400%;
   margin: 0px;
   padding: 0px;
+  
 }
 
 .typing_header_2 {
@@ -57,6 +58,7 @@ header {
 
 .flex_navigator {
   margin-top: 80px;
+ 
 }
 
 .current_page {
@@ -98,6 +100,10 @@ header {
 #para_intro_length {
   width: 65ch;
   font-weight: bold;
+}
+
+#display_paragraph {
+  color: rgb(24, 24, 24); font-size: 30px; margin-top: 30px
 }
 
 svg {
@@ -305,8 +311,8 @@ small {
 }
 
 .flex_navigator {
-  top: 70px;
-  left:650px;
+  top: 50px;
+  left:730px;
 }
 
 .visibility {
@@ -372,16 +378,29 @@ small {
   }
 }
 
+@media (max-width: 675px) {
+  #display_paragraph {
+    font-size: 25px;
+    margin-bottom: 20px;
+    width:500px;
+    margin-left: 20%;
+  }
+}
+
 
 @media (max-width: 618px) {
   
 
   h2#introduction_header {
     font-size: 40px;
+    width: 400px;
+    margin-left: 130px;
   }
 
   p#display_paragraph {
-    font-size: 10px;
+    font-size: 22px;
+    width: 400px;
+
   }
 }
 
@@ -394,6 +413,10 @@ small {
     width: 390px;
 
   }
+  .shift {
+    display: relative;
+    top: 150px;
+  }
 
   .flex_navigator {
     margin-bottom: -80px;
@@ -405,8 +428,16 @@ small {
   .flex_navigator {
    
   
-    margin-right: 550px;
+    margin-right: 720px;
+    font-size: 23px !important;
+    bottom: 40px;
+    margin-bottom: -200px;
 
   }
 }
 
+@media (max-height: 870px) {
+  .flex_navigator > div {
+    margin-top: 10vw;
+  }
+}

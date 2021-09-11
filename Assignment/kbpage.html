@@ -16,15 +16,11 @@
     <link rel="stylesheet" href="kbpage.css" />
     <link rel="stylesheet" href="./Shared css/scroll.css" />
     <link rel="icon" type="image/jpg" href="./images/D_Logo.jpg" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8W3R25TME"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta property="og:image" content="./images/D_Logo.jpg">
+    <meta name="title" content="My keyboard portfolio">
 
-  gtag('config', 'G-T8W3R25TME');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-T8W3R25TME"></script>
 
 
 
@@ -32,14 +28,9 @@
   </head>
 
 
-
-  
-
-
-
     <div class="size_bg fade-in" id="home">
       <nav>
-        <div class="flex_navigator" class="fade-in">
+        <div class="flex_navigator fade-in">
           <div>
             <a href="./index.html">Home</a>
           </div>
@@ -51,12 +42,12 @@
           </div>
         </div>
       </nav>
-      <header class="fade-in">
+      <header class="fade-in shift">
         <div>
-          <h1 class="typing_header">Mechanical Keyboard Portfolio</h1>
+          <h1 class="typing_header" id="info"></h1>
         </div>
         <div>
-          <h2 class="typing_header_2">
+          <h2 class="typing_header_2" id="info1">
             A look into to my mechanical keyboard interest
           </h2>
         </div>
@@ -69,8 +60,7 @@
           <div id="para_intro_length">
             <h2 id="introduction_header">How I got into keyboards</h2>
             <p
-              id="#display_paragraph"
-              style="color: rgb(24, 24, 24); font-size: 30px; margin-top: 30px"
+              id="display_paragraph"
             >
               I got into mechanical keyboards first, through buying a cheap
               'gaming' mechanical keyboard off a store. Ever since then, I have
@@ -128,23 +118,23 @@
       </h2>
       <div class="flex_gallery" id="gap_showcase">
         <div>
-          <img src="./images/kuro_shiro2.jpg" />
+          <img src="./images/kuro_shiro2.jpg"  alt="kuro_display"/>
         </div>
         <div>
           <img src="./images/kuro_shiro1.jpg" alt="mackb" />
         </div>
 
         <div>
-          <img src="./images/kuro_shiro3.jpg" />
+          <img src="./images/kuro_shiro3.jpg" alt="shiro_display"/>
         </div>
         <div>
-          <img src="./images/PHqiDnZ_2048x2048.jpg" />
+          <img src="./images/PHqiDnZ_2048x2048.jpg" alt="classic_kb" />
         </div>
         <div>
-          <img src="./images/gamerimg.jpg" />
+          <img src="./images/gamerimg.jpg" alt="gaming_kb"/>
         </div>
         <div>
-          <img src="./images/redkb.jpg" />
+          <img src="./images/redkb.jpg" alt="valentine_kb"/>
         </div>
       </div>
       <div class="typing_background fade-in">
@@ -153,8 +143,7 @@
         </h2>
         <div
           class="flex_gallery"
-          style="flex-direction: column"
-          style="height: 200px"
+          style="flex-direction: column;"
         >
           <div
             class="flex_gallery"
@@ -179,7 +168,7 @@
             </div>
 
             <div>
-              <p class="visibility" class="typingonkbpara">
+              <p class="visibility typingonkbpara">
                 Keyboard: Lyn Whale R2 (Black) Plate material: Half POM Keycaps:
                 G81-3000 SAV Switches: Retooled Cherry MX Blacks Lube: Krytox
                 205g0 Stabilizers: Genuine GMK screw in, lubed and clipped
@@ -190,7 +179,7 @@
 
           <div class="flex_gallery" style="position: relative; bottom: 70px" >
             <div>
-              <p class="visibility" class="typingonkbpara">
+              <p class="visibility typingonkbpara">
                 Keyboard: Fjell (Grey) Plate material: Brass Keycaps: GMK
                 Oblivion Switches: Holy Pandas Lube: Tribosys 3204 Stabilizers:
                 Genuine Cherry screw in, lubed and clipped Artisan: Graphite
@@ -231,7 +220,7 @@
           <img src="./images/keebt.jpeg" alt="keebtalk" />
           <p>I like Keebtalk due to its modern user interface and clean website. They strive to try new things for their website and are willing to change. The community is very active as well.</p>
         </div>
-        <div><img src="./images/Reddit.png" /><p>The r/mk subreddit contains a diversified community from all around the globe. It contains many resources for beginners and is really what got me interested in mechanical keyboards</p></div>
+        <div><img src="./images/Reddit.png" alt="reddit"/><p>The r/mk subreddit contains a diversified community from all around the globe. It contains many resources for beginners and is really what got me interested in mechanical keyboards</p></div>
         <div><img src="./images/geekhack.png" alt="geekhack" /><p>Geekhack will always hold a special place in my heart due to a very warm community there. They are the main forums for group buys and interest checks that spurs the market.</p></div>
       </div>
       
@@ -251,9 +240,10 @@
 </section>
 </main>
     <footer>
-      <a href="#home" class="neon_button fade-in">Go back to the top</a>
+      <a href="#home" class="neon_button">Go back to the top</a>
       <p><small>Copyright 2021 &copy; Declan Kuok. If you use this, please give me attribution. Thank you.</small></p>
     </footer>
+    <script src="kbpage.js"></script>
     <script src="shared.js"></script>
   </body>
 </html>

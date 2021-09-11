@@ -128,7 +128,22 @@ form .button {
     margin: 20px 0;
 }
 
-form .button input {
+@keyframes fade {
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 0;}
+}
+
+#my-form-status {
+  text-align: center;
+  animation-name: fade;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+
+}
+
+
+form .button {
     height: 100%;
     width: 100%;
     color: #c4c4aa;
@@ -136,9 +151,17 @@ form .button input {
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 5px;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid rgb(241, 156, 203);
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
 }
 
-form .button input:hover {
+form .button:hover {
     background: rgb(156, 149, 149);
 }
 
@@ -180,9 +203,8 @@ h2.discord_gray {
   }
 
   .flex_navigator {
-    top: 70px;
+    top: 50px;
   }
-
 
   @media (max-width: 808px) {
   header {
@@ -203,6 +225,7 @@ header {
     left: 300px;
     top: 0px;
 }
+
 }
 
 @media (max-width: 723px) {
@@ -211,6 +234,8 @@ header {
     left: 200px;
     
 }
+
+
 }
 @media (max-width: 584px) {
     .container {
@@ -253,3 +278,17 @@ header {
 }
 }
 
+
+@media (max-height: 870px) {
+  .flex_navigator > div {
+    margin-top: 30vw;
+    margin-bottom: 200px;
+  }
+}
+
+
+@media (max-width: 433px) {
+  .flex_navigator {
+    margin-bottom: 0px;
+  }
+}
